@@ -1,0 +1,82 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	padding: 0 !important;
+}
+
+/* PALETTE */
+
+$red: #D22027;
+$aubergine: #A20362;
+$turquoise: #00A9A0;
+$orange: #F25C19;
+$yellow: #FFF200;
+$grey: #918F90;
+$warmgrey-light: #E9E8DB;
+$warmgrey: #D3D1B9;
+$warmgrey-dark: #BDBA9A;
+
+/* FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Source+Sans+Pro:wght@200;400;600&display=swap');
+
+@font-face {
+	font-family: 'Avenyt';
+	font-weight: bold;
+	src: url('../fonts/avenyt-bold-webfont.woff2') format('woff2'),
+		url('../fonts/avenyt-bold-webfont.woff') format('woff'),
+		url('../fonts/avenyt-bold-webfont.ttf') format('ttf');
+}
+
+@font-face {
+	font-family: 'Avenyt';
+	font-weight: normal;
+	src: url('../fonts/avenyt-regular-webfont.woff2') format('woff2'),
+		url('../fonts/avenyt-regular-webfont.woff') format('woff'),
+		url('../fonts/avenyt-regular-webfont.ttf') format('ttf');
+}
+
+@font-face {
+	font-family: 'Lacrima';
+	font-weight: normal;
+	src: url('../fonts/lacrimaserif-webfont.woff2') format('woff2'),
+		url('../fonts/lacrimaserif-webfont.woff') format('woff'),
+		url('../fonts/lacrimaserif-webfont.ttf') format('ttf');
+}
+
+
+/* MIXINS FOR RESPONSIVENESS */
+
+$screen-sm: 32rem; // 512px
+
+@mixin sm {
+   @media (max-width: #{$screen-sm}) {
+       @content;
+   }
+}
+
+$screen-md: 48rem; // 768px
+
+@mixin md {
+   @media (max-width: #{$screen-md}) {
+       @content;
+   }
+}
+
+$screen-lg: 64rem; // 1024px
+
+@mixin lg {
+   @media (max-width: #{$screen-lg}) {
+       @content;
+   }
+}
+
+$screen-xl: 96rem; // 1536px
+
+@mixin xl {
+   @media (max-width: #{$screen-xl}) {
+       @content;
+   }
+}
