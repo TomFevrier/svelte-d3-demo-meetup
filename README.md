@@ -18,8 +18,7 @@ o888ooooood8 `Y8bod8P' 8""888P'    o888ooooood8 `Y8bod8P' o888o o888o `Y8bod8P' 
 ---
 
 ```bash
-npx degit TomFevrier/svelte-d3-demo-meetup
-cd svelte-d3-demo
+npx degit TomFevrier/svelte-d3-demo-meetup demo
 ```
 
 *Note : [Node.js](https://nodejs.org) doit être installé.*
@@ -30,7 +29,7 @@ cd svelte-d3-demo
 Installer les dépendances...
 
 ```bash
-cd svelte-d3-demo-meetup
+cd demo
 npm install
 ```
 
